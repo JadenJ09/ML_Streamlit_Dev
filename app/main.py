@@ -65,6 +65,8 @@ def add_sidebar():
     return input_dict
 
 # %%
+# print(add_sidebar())
+# %%
 def get_scaled_values(input_dict):
     data = get_clean_data()
 
@@ -80,6 +82,8 @@ def get_scaled_values(input_dict):
 
     return scaled_dict
 
+# %%
+# print(get_scaled_values(add_sidebar()))
 # %%
 def get_radar_chart(input_data):
   
@@ -126,12 +130,12 @@ def get_radar_chart(input_data):
     ))
 
     fig.update_layout(
-    polar=dict(
-        radialaxis=dict(
-        visible=True,
-        range=[0, 1]
-        )),
-    showlegend=True
+        polar=dict(
+            radialaxis=dict(
+                visible=True,
+                range=[0, 1]
+            )),
+        showlegend=True
     )
 
     return fig
